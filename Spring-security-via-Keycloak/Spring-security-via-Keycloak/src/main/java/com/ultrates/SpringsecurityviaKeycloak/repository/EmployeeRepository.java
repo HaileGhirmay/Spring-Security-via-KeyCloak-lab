@@ -1,0 +1,8 @@
+package com.ultrates.SpringsecurityviaKeycloak.repository;
+
+import com.ultrates.SpringsecurityviaKeycloak.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
+
+}
