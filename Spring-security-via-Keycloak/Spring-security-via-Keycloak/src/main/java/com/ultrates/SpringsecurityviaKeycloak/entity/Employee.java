@@ -11,11 +11,18 @@ import javax.persistence.*;
 @ToString
 @Entity
 @Table
+@Setter
+
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String department;
+    private double salary;
 
+
+    public Employee(String haile, double v) {
+        this.name=haile;
+        this.salary=v;
+    }
 }
